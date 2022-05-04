@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll CSS</title>
+    <style>
+     html{
+        scroll-behavior: smooth; 
+     }
+     a{
+         display: inline-block;
+         width: auto;
+         text-decoration: none;
+         font-size: 1.3em;
+     }
+     nav, scroll-container {
+         display: block;
+         margin: 0 auto;
+         text-align: center;
+     }
+     nav {
+         width: 600px;
+         padding: 5px;
+         border: 1px solid black;
+     }
+     scroll-container{
+         width: 800px;
+         height: auto;
+         position: relative;
+     }
+     scroll-page {
+         border: 3px solid red;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 100%;
+         font-size: 2em;
+         margin: 15px;
+     }
+
+     #topo{
+         position: absolute;
+         bottom: 15px;
+         right: 25px;
+     }
+    </style>
+</head>
+<body>
+  <nav>
+      <a href="#page-1">Sessão 01</a>
+      <a href="#page-2">Sessão 02</a>
+      <a href="#page-3">Sessão 03</a>
+  </nav>
+  <scroll-container>
+      <scroll-page id="page-1">
+        <h2>Conteúdo 01</h2>  <hr>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolores accusantium suscipit voluptate a provident inventore, id tempore similique, fuga officiis! Enim nihil exercitationem eos consequuntur nesciunt provident nisi esse?
+      </scroll-page>
+      <scroll-page id="page-2">
+        <h2>Conteúdo 02</h2>  <hr>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, beatae quis maiores veritatis veniam, totam nemo numquam sed distinctio odit aut explicabo eaque qui mollitia itaque libero ipsam possimus nostrum.
+        <a href="#page-1">Sessão 01</a>
+      </scroll-page>
+      <scroll-page id="page-3">
+        <h2>Conteúdo 03</h2>  <hr>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam mollitia eveniet inventore voluptatibus, iusto velit harum vitae adipisci consequuntur hic qui cupiditate illum voluptate incidunt amet sed, eum deserunt eligendi!
+        <a href="#page-2">Sessão 02</a>
+      </scroll-page>
+      <a id="topo" href="#top">Home</a>
+  </scroll-container>  
+</body>
+</html>
